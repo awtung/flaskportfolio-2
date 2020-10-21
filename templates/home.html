@@ -1,0 +1,193 @@
+<html>
+
+<head>
+    <style type="text/css">
+        .blinking {
+            animation: blinkingText 1s infinite;
+            font-family: futura;
+            font-style: italic;
+            width: 100%;
+            margin: 0 auto;
+            text-align: center;
+            color: white;
+            font-size: 45px;
+            background-color: #fc030b;
+        }
+        
+         @keyframes blinkingText {
+            from {
+                opacity: 1;
+                color : yellow;
+                }
+            to {
+                opacity: 0;
+                color : white;
+                }
+            0% {
+                opacity: 0;
+            }
+            50% {
+                opacity: .5;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+ 
+    <body>
+ 
+        <span class="blinking">Welcome to our Website</span>
+ 
+    </body>
+
+<a href="templates/socials.html"><button>Socials</button></a>
+
+
+<html>
+
+    <head>
+        <title>Nathan Lee, Ryan Luo, Aiden Tung, Jaideep Bollu | Home </title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    </head>
+
+            <div class="product" style="margin-top: 2%;">
+              <div class="row" style="padding: 10%; padding-top: 0%; padding-bottom: 5%;">
+
+                  <div class="col-8" >
+                      <h1>Hello Series Project</h1>
+                  </div>
+
+              </div>
+
+              <div class="row" style="padding-left: 10%;">
+                  <div class="col-4">
+                      <a href="https://docs.google.com/document/d/1IgPcGHpxZv6NMC4WPg7P13Fe-gd07imfC3v0gI6IYu0/edit" class="btn">Project Plan</a>
+                  </div>
+
+                  <div class="col-4">
+                      <a href="https://repl.it/@lukemanning224/P4bang#README.md" class="btn">Repl</a>
+                  </div>
+
+                  <div class="col-4">
+                      <a href="https://docs.google.com/document/d/1Za_MsyN4WnX-XvSfghbFuCRa0Q46GHVEKpRmo49XT8Q/edit" class="btn">Journal</a>
+                  </div>
+
+              </div>
+
+            </div>
+
+
+            <div class="product" style="margin-top: 5%;">
+              <div class="row" style="padding: 10%; padding-top: 5%; padding-bottom: 5%;">
+
+                  <div class="col-8" >
+                      <h1>Flask Series Project</h1>
+                  </div>
+
+              </div>
+
+              <div class="row" style="padding-left: 10%;">
+                  <div class="col-4">
+                      <a href="https://docs.google.com/document/d/151gLD0IGXamp77P5E_spHx7XCgf_OamdRKZm3rgeOWQ/edit?usp=sharing" class="btn">Project Plan</a>
+                  </div>
+
+                  <div class="col-4">
+                      <a href="#" class="btn">Repl</a>
+                  </div>
+
+                  <div class="col-4">
+                      <a href="#" class="btn">Resources</a>
+                  </div>
+
+              </div>
+
+            </div>
+
+
+        </div>
+
+    </body>  
+
+    <script src="https://threejs.org/build/three.js"></script>
+    <script src="{{ url_for('static', filename='vanta.birds.min.js') }}"></script>
+    <script>
+
+    VANTA.BIRDS({
+      el: "body",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      scale: 1.00,
+      scaleMobile: 1.00,
+      wingSpan: 40.0
+    })
+    </script>
+
+    <style>
+        html, body {
+            margin: 0;
+            height: 200%;
+            color: white;
+        }
+
+        h1{
+            font-size: 5em;
+        }
+
+
+        .fa{
+            font-size: 3em;
+            letter-spacing: 1em;
+            transition: all .2s;
+            color: white;
+        }
+
+        .fa:hover{
+            transform: translateY(10px);
+        }
+
+        .fa-youtube-play:hover{
+            color: #cc0000;
+        }
+
+        .fa-twitter:hover{
+            color: #1da1f2;
+        }
+
+        .fa-github:hover{
+            color: #000000;
+        }
+
+
+        .btn:link,
+        .btn:visited {
+            text-transform: uppercase;
+            text-decoration: none;
+            padding: 15px 40px;
+            display: inline-block;
+            border-radius: 100px;
+            transition: all .2s;
+            position: absolute;
+            color: white;
+            font-size: 2.5em;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 20px 40px rgba(255, 255, 255, 0.2);
+        }
+
+        .btn:active {
+            transform: translateY(-1px);
+            box-shadow: 0 5px 10px rgba(255, 255, 255, 0.2);
+        }
+
+        
+    </style>
+
+</html>
